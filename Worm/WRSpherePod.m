@@ -20,7 +20,7 @@
     
     if (self = [super initWithTexture:texture]) {
         //init
-        self.power = 1;
+        self.power = 3;
     }
     
     return self;

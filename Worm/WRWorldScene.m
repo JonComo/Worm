@@ -14,7 +14,10 @@
 
 #import "WRSphere.h"
 #import "WRSpherePod.h"
+
 #import "WRSphereBoost.h"
+#import "WRSphereBomb.h"
+#import "WRSpherePower.h"
 
 #import "WRControlPad.h"
 
@@ -43,12 +46,12 @@
         self.physicsWorld.gravity = CGVectorMake(0, 0);
         self.backgroundColor = [UIColor blackColor];
         
-        /*
+        
         stars = [[WRInfiniteScroll alloc] initWithImage:[UIImage imageNamed:@"stars"] size:size];
         [self addChild:stars];
         
         dust = [[WRInfiniteScroll alloc] initWithImage:[UIImage imageNamed:@"stars2"] size:size];
-        [self addChild:dust]; */
+        [self addChild:dust];
         
         _world = [[SKSpriteNode alloc] init];
         [self addChild:_world];
@@ -70,11 +73,29 @@
         
         _sphereControlling = _player;
         
-        for (int i = 0; i<50; i++)
+        for (int i = 0; i<400; i++)
         {
-            WRSphere *randomSphere = [WRSphereBoost new];
+            WRSphere *randomSphere;
             
-            randomSphere.position = CGPointMake((float)(arc4random()%1000) - 500, (float)(arc4random()%1000) - 500);
+            switch (arc4random() % 3) {
+                case 0:
+                    randomSphere = [WRSphereBoost new];
+                    break;
+                case 1:
+                    randomSphere = [WRSphereBomb new];
+                    break;
+                case 2:
+                    randomSphere = [WRSpherePower new];
+                    break;
+                    
+                default:
+                    randomSphere = [[WRSphere alloc] initWithTexture:[SKTexture textureWithImageNamed:@"sphereSpacer"]];
+                    break;
+            }
+            
+            randomSphere.position = CGPointMake((float)(arc4random()%4000) - 2000, (float)(arc4random()%4000) - 2000);
+            //randomSphere.angle = (float)(arc4random()%360)*M_PI/180.0f;
+            
             [_world addChild:randomSphere];
         }
         
@@ -97,7 +118,21 @@
 -(void)rotateToAngle:(float)angle
 {
     if (ABS(self.sphereControlling.angle - angle) > 0.1)
+    {
         self.sphereControlling.angle += (float)[JCMath turnAngle:self.sphereControlling.angle*180.0f/M_PI towardsDesiredAngle:angle*180.0f/M_PI]*(M_PI/24);
+    }
+}
+
+-(void)gameOver
+{
+    isGameOver = YES;
+    
+    [self sparksAtPosition:self.player.position];
+    [self runAction:[SKAction playSoundFileNamed:@"attach.wav" waitForCompletion:NO]];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [[NSNotificationCenter defaultCenter] postNotificationName:WR_GAME_OVER object:nil];
+    });
 }
 
 -(void)update:(NSTimeInterval)currentTime
@@ -118,8 +153,8 @@
 
 -(void)sparksAtPosition:(CGPoint)position
 {
-    particles.particleBirthRate = 100;
-    particles.numParticlesToEmit += 65;
+    particles.particleBirthRate = 200;
+    particles.numParticlesToEmit += 15;
     
     [[WRShake manager] shakeWithIntensity:2];
 }

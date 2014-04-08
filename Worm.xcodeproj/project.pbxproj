@@ -11,6 +11,11 @@
 		8614694518F3725800D55675 /* spherePod.png in Resources */ = {isa = PBXBuildFile; fileRef = 8614694318F3725800D55675 /* spherePod.png */; };
 		8614694918F3742E00D55675 /* WRSphereBoost.m in Sources */ = {isa = PBXBuildFile; fileRef = 8614694818F3742E00D55675 /* WRSphereBoost.m */; };
 		8614694C18F3776900D55675 /* WRSpherePod.m in Sources */ = {isa = PBXBuildFile; fileRef = 8614694B18F3776900D55675 /* WRSpherePod.m */; };
+		8614694E18F3BD6800D55675 /* spherePower.png in Resources */ = {isa = PBXBuildFile; fileRef = 8614694D18F3BD6800D55675 /* spherePower.png */; };
+		8614695118F3BD7D00D55675 /* WRSphereBomb.m in Sources */ = {isa = PBXBuildFile; fileRef = 8614695018F3BD7D00D55675 /* WRSphereBomb.m */; };
+		8614695418F3BD9D00D55675 /* WRSpherePower.m in Sources */ = {isa = PBXBuildFile; fileRef = 8614695318F3BD9D00D55675 /* WRSpherePower.m */; };
+		8614695618F3BDAB00D55675 /* sphereBomb.png in Resources */ = {isa = PBXBuildFile; fileRef = 8614695518F3BDAB00D55675 /* sphereBomb.png */; };
+		8614695818F3C06500D55675 /* sphereSpacer.png in Resources */ = {isa = PBXBuildFile; fileRef = 8614695718F3C06500D55675 /* sphereSpacer.png */; };
 		8662B16018EF8F1000C90FC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8662B15F18EF8F1000C90FC0 /* Foundation.framework */; };
 		8662B16218EF8F1000C90FC0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8662B16118EF8F1000C90FC0 /* CoreGraphics.framework */; };
 		8662B16418EF8F1000C90FC0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8662B16318EF8F1000C90FC0 /* UIKit.framework */; };
@@ -58,6 +63,13 @@
 		8614694818F3742E00D55675 /* WRSphereBoost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRSphereBoost.m; sourceTree = "<group>"; };
 		8614694A18F3776900D55675 /* WRSpherePod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRSpherePod.h; sourceTree = "<group>"; };
 		8614694B18F3776900D55675 /* WRSpherePod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRSpherePod.m; sourceTree = "<group>"; };
+		8614694D18F3BD6800D55675 /* spherePower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spherePower.png; sourceTree = "<group>"; };
+		8614694F18F3BD7D00D55675 /* WRSphereBomb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRSphereBomb.h; sourceTree = "<group>"; };
+		8614695018F3BD7D00D55675 /* WRSphereBomb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRSphereBomb.m; sourceTree = "<group>"; };
+		8614695218F3BD9D00D55675 /* WRSpherePower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRSpherePower.h; sourceTree = "<group>"; };
+		8614695318F3BD9D00D55675 /* WRSpherePower.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRSpherePower.m; sourceTree = "<group>"; };
+		8614695518F3BDAB00D55675 /* sphereBomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sphereBomb.png; sourceTree = "<group>"; };
+		8614695718F3C06500D55675 /* sphereSpacer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sphereSpacer.png; sourceTree = "<group>"; };
 		8662B15C18EF8F1000C90FC0 /* Worm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Worm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8662B15F18EF8F1000C90FC0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8662B16118EF8F1000C90FC0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -135,6 +147,10 @@
 				8614694B18F3776900D55675 /* WRSpherePod.m */,
 				8614694718F3742E00D55675 /* WRSphereBoost.h */,
 				8614694818F3742E00D55675 /* WRSphereBoost.m */,
+				8614694F18F3BD7D00D55675 /* WRSphereBomb.h */,
+				8614695018F3BD7D00D55675 /* WRSphereBomb.m */,
+				8614695218F3BD9D00D55675 /* WRSpherePower.h */,
+				8614695318F3BD9D00D55675 /* WRSpherePower.m */,
 			);
 			name = Spheres;
 			sourceTree = "<group>";
@@ -232,6 +248,9 @@
 		8662B1A418EF935900C90FC0 /* media */ = {
 			isa = PBXGroup;
 			children = (
+				8614695718F3C06500D55675 /* sphereSpacer.png */,
+				8614694D18F3BD6800D55675 /* spherePower.png */,
+				8614695518F3BDAB00D55675 /* sphereBomb.png */,
 				8614694218F3725800D55675 /* sphereBoost.png */,
 				8614694318F3725800D55675 /* spherePod.png */,
 				86EDC94618F23D9900AA137A /* stars2.png */,
@@ -326,6 +345,9 @@
 				8662B16C18EF8F1100C90FC0 /* InfoPlist.strings in Resources */,
 				86EDC94718F23D9900AA137A /* stars2.png in Resources */,
 				8662B17F18EF8F1100C90FC0 /* Images.xcassets in Resources */,
+				8614695618F3BDAB00D55675 /* sphereBomb.png in Resources */,
+				8614694E18F3BD6800D55675 /* spherePower.png in Resources */,
+				8614695818F3C06500D55675 /* sphereSpacer.png in Resources */,
 				8614694518F3725800D55675 /* spherePod.png in Resources */,
 				86EDC93118F1E24800AA137A /* attach.wav in Resources */,
 				8662B1B018EF99AA00C90FC0 /* padMovement.png in Resources */,
@@ -356,7 +378,9 @@
 				8662B1B318EF9B3000C90FC0 /* WRSphere.m in Sources */,
 				8662B1A018EF90B200C90FC0 /* WRWorldViewController.m in Sources */,
 				8662B19D18EF906400C90FC0 /* WRWorldScene.m in Sources */,
+				8614695418F3BD9D00D55675 /* WRSpherePower.m in Sources */,
 				8662B1B618EF9B9C00C90FC0 /* WRObject.m in Sources */,
+				8614695118F3BD7D00D55675 /* WRSphereBomb.m in Sources */,
 				8614694C18F3776900D55675 /* WRSpherePod.m in Sources */,
 				8614694918F3742E00D55675 /* WRSphereBoost.m in Sources */,
 				8662B1AE18EF967700C90FC0 /* WRControlPad.m in Sources */,

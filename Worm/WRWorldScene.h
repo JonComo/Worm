@@ -20,4 +20,6 @@
 
 -(void)sparksAtPosition:(CGPoint)position;
 
+-(void)gameOver;
+
 @end

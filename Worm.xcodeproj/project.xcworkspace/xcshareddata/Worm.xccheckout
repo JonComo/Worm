@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>126776D2-E375-4304-9A6A-6BCD9E5E679C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Worm</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>321C0C2C-0EB2-4951-966C-C4873B9C5960</key>
+		<string>https://github.com/JonComo/Worm.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Worm.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>321C0C2C-0EB2-4951-966C-C4873B9C5960</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/JonComo/Worm.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>321C0C2C-0EB2-4951-966C-C4873B9C5960</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>321C0C2C-0EB2-4951-966C-C4873B9C5960</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Worm</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -28,7 +28,7 @@
     
     //Increase everythings power
     
-    parent.power += 0.1;
+    parent.power += 0.2;
     
     self.power = parent.power;
     

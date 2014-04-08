@@ -12,4 +12,6 @@
 
 -(void)update;
 
+-(BOOL)isOnScreen;
+
 @end
