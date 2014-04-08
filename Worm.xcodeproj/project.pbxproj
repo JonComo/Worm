@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8614694418F3725800D55675 /* sphereBoost.png in Resources */ = {isa = PBXBuildFile; fileRef = 8614694218F3725800D55675 /* sphereBoost.png */; };
+		8614694518F3725800D55675 /* spherePod.png in Resources */ = {isa = PBXBuildFile; fileRef = 8614694318F3725800D55675 /* spherePod.png */; };
+		8614694918F3742E00D55675 /* WRSphereBoost.m in Sources */ = {isa = PBXBuildFile; fileRef = 8614694818F3742E00D55675 /* WRSphereBoost.m */; };
+		8614694C18F3776900D55675 /* WRSpherePod.m in Sources */ = {isa = PBXBuildFile; fileRef = 8614694B18F3776900D55675 /* WRSpherePod.m */; };
 		8662B16018EF8F1000C90FC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8662B15F18EF8F1000C90FC0 /* Foundation.framework */; };
 		8662B16218EF8F1000C90FC0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8662B16118EF8F1000C90FC0 /* CoreGraphics.framework */; };
 		8662B16418EF8F1000C90FC0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8662B16318EF8F1000C90FC0 /* UIKit.framework */; };
@@ -15,15 +19,26 @@
 		8662B16E18EF8F1100C90FC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8662B16D18EF8F1100C90FC0 /* main.m */; };
 		8662B17218EF8F1100C90FC0 /* WRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8662B17118EF8F1100C90FC0 /* WRAppDelegate.m */; };
 		8662B17518EF8F1100C90FC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8662B17318EF8F1100C90FC0 /* Main.storyboard */; };
-		8662B17818EF8F1100C90FC0 /* WRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8662B17718EF8F1100C90FC0 /* WRViewController.m */; };
-		8662B17B18EF8F1100C90FC0 /* WRMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8662B17A18EF8F1100C90FC0 /* WRMyScene.m */; };
-		8662B17D18EF8F1100C90FC0 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 8662B17C18EF8F1100C90FC0 /* Spaceship.png */; };
 		8662B17F18EF8F1100C90FC0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8662B17E18EF8F1100C90FC0 /* Images.xcassets */; };
 		8662B18618EF8F1100C90FC0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8662B18518EF8F1100C90FC0 /* XCTest.framework */; };
 		8662B18718EF8F1100C90FC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8662B15F18EF8F1000C90FC0 /* Foundation.framework */; };
 		8662B18818EF8F1100C90FC0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8662B16318EF8F1000C90FC0 /* UIKit.framework */; };
 		8662B19018EF8F1100C90FC0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8662B18E18EF8F1100C90FC0 /* InfoPlist.strings */; };
 		8662B19218EF8F1100C90FC0 /* WormTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8662B19118EF8F1100C90FC0 /* WormTests.m */; };
+		8662B19D18EF906400C90FC0 /* WRWorldScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8662B19C18EF906400C90FC0 /* WRWorldScene.m */; };
+		8662B1A018EF90B200C90FC0 /* WRWorldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8662B19F18EF90B200C90FC0 /* WRWorldViewController.m */; };
+		8662B1A318EF91C100C90FC0 /* JCMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 8662B1A218EF91C100C90FC0 /* JCMath.m */; };
+		8662B1AE18EF967700C90FC0 /* WRControlPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 8662B1AD18EF967700C90FC0 /* WRControlPad.m */; };
+		8662B1B018EF99AA00C90FC0 /* padMovement.png in Resources */ = {isa = PBXBuildFile; fileRef = 8662B1AF18EF99AA00C90FC0 /* padMovement.png */; };
+		8662B1B318EF9B3000C90FC0 /* WRSphere.m in Sources */ = {isa = PBXBuildFile; fileRef = 8662B1B218EF9B3000C90FC0 /* WRSphere.m */; };
+		8662B1B618EF9B9C00C90FC0 /* WRObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8662B1B518EF9B9C00C90FC0 /* WRObject.m */; };
+		86EDC93118F1E24800AA137A /* attach.wav in Resources */ = {isa = PBXBuildFile; fileRef = 86EDC93018F1E24800AA137A /* attach.wav */; };
+		86EDC93418F1E2EF00AA137A /* sparks.sks in Resources */ = {isa = PBXBuildFile; fileRef = 86EDC93218F1E2EF00AA137A /* sparks.sks */; };
+		86EDC93918F1E50400AA137A /* spark2.png in Resources */ = {isa = PBXBuildFile; fileRef = 86EDC93818F1E50400AA137A /* spark2.png */; };
+		86EDC93C18F1ECCC00AA137A /* WRShake.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EDC93B18F1ECCC00AA137A /* WRShake.m */; };
+		86EDC94218F2310F00AA137A /* stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 86EDC94118F2310F00AA137A /* stars.png */; };
+		86EDC94518F2315600AA137A /* WRInfiniteScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EDC94418F2315600AA137A /* WRInfiniteScroll.m */; };
+		86EDC94718F23D9900AA137A /* stars2.png in Resources */ = {isa = PBXBuildFile; fileRef = 86EDC94618F23D9900AA137A /* stars2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +52,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8614694218F3725800D55675 /* sphereBoost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sphereBoost.png; sourceTree = "<group>"; };
+		8614694318F3725800D55675 /* spherePod.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spherePod.png; sourceTree = "<group>"; };
+		8614694718F3742E00D55675 /* WRSphereBoost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRSphereBoost.h; sourceTree = "<group>"; };
+		8614694818F3742E00D55675 /* WRSphereBoost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRSphereBoost.m; sourceTree = "<group>"; };
+		8614694A18F3776900D55675 /* WRSpherePod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRSpherePod.h; sourceTree = "<group>"; };
+		8614694B18F3776900D55675 /* WRSpherePod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRSpherePod.m; sourceTree = "<group>"; };
 		8662B15C18EF8F1000C90FC0 /* Worm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Worm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8662B15F18EF8F1000C90FC0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8662B16118EF8F1000C90FC0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -49,17 +70,35 @@
 		8662B17018EF8F1100C90FC0 /* WRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WRAppDelegate.h; sourceTree = "<group>"; };
 		8662B17118EF8F1100C90FC0 /* WRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WRAppDelegate.m; sourceTree = "<group>"; };
 		8662B17418EF8F1100C90FC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8662B17618EF8F1100C90FC0 /* WRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WRViewController.h; sourceTree = "<group>"; };
-		8662B17718EF8F1100C90FC0 /* WRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WRViewController.m; sourceTree = "<group>"; };
-		8662B17918EF8F1100C90FC0 /* WRMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WRMyScene.h; sourceTree = "<group>"; };
-		8662B17A18EF8F1100C90FC0 /* WRMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WRMyScene.m; sourceTree = "<group>"; };
-		8662B17C18EF8F1100C90FC0 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		8662B17E18EF8F1100C90FC0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8662B18418EF8F1100C90FC0 /* WormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8662B18518EF8F1100C90FC0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		8662B18D18EF8F1100C90FC0 /* WormTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WormTests-Info.plist"; sourceTree = "<group>"; };
 		8662B18F18EF8F1100C90FC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8662B19118EF8F1100C90FC0 /* WormTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WormTests.m; sourceTree = "<group>"; };
+		8662B19B18EF906400C90FC0 /* WRWorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRWorldScene.h; sourceTree = "<group>"; };
+		8662B19C18EF906400C90FC0 /* WRWorldScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRWorldScene.m; sourceTree = "<group>"; };
+		8662B19E18EF90B200C90FC0 /* WRWorldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRWorldViewController.h; sourceTree = "<group>"; };
+		8662B19F18EF90B200C90FC0 /* WRWorldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRWorldViewController.m; sourceTree = "<group>"; };
+		8662B1A118EF91C100C90FC0 /* JCMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCMath.h; sourceTree = "<group>"; };
+		8662B1A218EF91C100C90FC0 /* JCMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCMath.m; sourceTree = "<group>"; };
+		8662B1AC18EF967700C90FC0 /* WRControlPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRControlPad.h; sourceTree = "<group>"; };
+		8662B1AD18EF967700C90FC0 /* WRControlPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRControlPad.m; sourceTree = "<group>"; };
+		8662B1AF18EF99AA00C90FC0 /* padMovement.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = padMovement.png; sourceTree = "<group>"; };
+		8662B1B118EF9B3000C90FC0 /* WRSphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRSphere.h; sourceTree = "<group>"; };
+		8662B1B218EF9B3000C90FC0 /* WRSphere.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRSphere.m; sourceTree = "<group>"; };
+		8662B1B418EF9B9C00C90FC0 /* WRObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRObject.h; sourceTree = "<group>"; };
+		8662B1B518EF9B9C00C90FC0 /* WRObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRObject.m; sourceTree = "<group>"; };
+		8662B1BA18EFB07800C90FC0 /* Notifications.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Notifications.h; sourceTree = "<group>"; };
+		86EDC93018F1E24800AA137A /* attach.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = attach.wav; sourceTree = "<group>"; };
+		86EDC93218F1E2EF00AA137A /* sparks.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = sparks.sks; sourceTree = "<group>"; };
+		86EDC93818F1E50400AA137A /* spark2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark2.png; sourceTree = "<group>"; };
+		86EDC93A18F1ECCB00AA137A /* WRShake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRShake.h; sourceTree = "<group>"; };
+		86EDC93B18F1ECCC00AA137A /* WRShake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRShake.m; sourceTree = "<group>"; };
+		86EDC94118F2310F00AA137A /* stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stars.png; sourceTree = "<group>"; };
+		86EDC94318F2315600AA137A /* WRInfiniteScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRInfiniteScroll.h; sourceTree = "<group>"; };
+		86EDC94418F2315600AA137A /* WRInfiniteScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRInfiniteScroll.m; sourceTree = "<group>"; };
+		86EDC94618F23D9900AA137A /* stars2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stars2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +126,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8614694618F373A000D55675 /* Spheres */ = {
+			isa = PBXGroup;
+			children = (
+				8662B1B118EF9B3000C90FC0 /* WRSphere.h */,
+				8662B1B218EF9B3000C90FC0 /* WRSphere.m */,
+				8614694A18F3776900D55675 /* WRSpherePod.h */,
+				8614694B18F3776900D55675 /* WRSpherePod.m */,
+				8614694718F3742E00D55675 /* WRSphereBoost.h */,
+				8614694818F3742E00D55675 /* WRSphereBoost.m */,
+			);
+			name = Spheres;
+			sourceTree = "<group>";
+		};
 		8662B15318EF8F1000C90FC0 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +161,8 @@
 		8662B15E18EF8F1000C90FC0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8662B1A118EF91C100C90FC0 /* JCMath.h */,
+				8662B1A218EF91C100C90FC0 /* JCMath.m */,
 				8662B15F18EF8F1000C90FC0 /* Foundation.framework */,
 				8662B16118EF8F1000C90FC0 /* CoreGraphics.framework */,
 				8662B16318EF8F1000C90FC0 /* UIKit.framework */,
@@ -121,14 +175,25 @@
 		8662B16718EF8F1100C90FC0 /* Worm */ = {
 			isa = PBXGroup;
 			children = (
+				8662B1A418EF935900C90FC0 /* media */,
 				8662B17018EF8F1100C90FC0 /* WRAppDelegate.h */,
 				8662B17118EF8F1100C90FC0 /* WRAppDelegate.m */,
 				8662B17318EF8F1100C90FC0 /* Main.storyboard */,
-				8662B17618EF8F1100C90FC0 /* WRViewController.h */,
-				8662B17718EF8F1100C90FC0 /* WRViewController.m */,
-				8662B17918EF8F1100C90FC0 /* WRMyScene.h */,
-				8662B17A18EF8F1100C90FC0 /* WRMyScene.m */,
-				8662B17C18EF8F1100C90FC0 /* Spaceship.png */,
+				8662B19E18EF90B200C90FC0 /* WRWorldViewController.h */,
+				8662B19F18EF90B200C90FC0 /* WRWorldViewController.m */,
+				8662B19B18EF906400C90FC0 /* WRWorldScene.h */,
+				8662B19C18EF906400C90FC0 /* WRWorldScene.m */,
+				8662B1B418EF9B9C00C90FC0 /* WRObject.h */,
+				8662B1B518EF9B9C00C90FC0 /* WRObject.m */,
+				8662B1AC18EF967700C90FC0 /* WRControlPad.h */,
+				8662B1AD18EF967700C90FC0 /* WRControlPad.m */,
+				8614694618F373A000D55675 /* Spheres */,
+				86EDC93218F1E2EF00AA137A /* sparks.sks */,
+				86EDC93A18F1ECCB00AA137A /* WRShake.h */,
+				86EDC93B18F1ECCC00AA137A /* WRShake.m */,
+				86EDC94318F2315600AA137A /* WRInfiniteScroll.h */,
+				86EDC94418F2315600AA137A /* WRInfiniteScroll.m */,
+				8662B1BA18EFB07800C90FC0 /* Notifications.h */,
 				8662B17E18EF8F1100C90FC0 /* Images.xcassets */,
 				8662B16818EF8F1100C90FC0 /* Supporting Files */,
 			);
@@ -162,6 +227,20 @@
 				8662B18E18EF8F1100C90FC0 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8662B1A418EF935900C90FC0 /* media */ = {
+			isa = PBXGroup;
+			children = (
+				8614694218F3725800D55675 /* sphereBoost.png */,
+				8614694318F3725800D55675 /* spherePod.png */,
+				86EDC94618F23D9900AA137A /* stars2.png */,
+				86EDC94118F2310F00AA137A /* stars.png */,
+				86EDC93818F1E50400AA137A /* spark2.png */,
+				86EDC93018F1E24800AA137A /* attach.wav */,
+				8662B1AF18EF99AA00C90FC0 /* padMovement.png */,
+			);
+			path = media;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,9 +320,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8614694418F3725800D55675 /* sphereBoost.png in Resources */,
+				86EDC93918F1E50400AA137A /* spark2.png in Resources */,
+				86EDC94218F2310F00AA137A /* stars.png in Resources */,
 				8662B16C18EF8F1100C90FC0 /* InfoPlist.strings in Resources */,
+				86EDC94718F23D9900AA137A /* stars2.png in Resources */,
 				8662B17F18EF8F1100C90FC0 /* Images.xcassets in Resources */,
-				8662B17D18EF8F1100C90FC0 /* Spaceship.png in Resources */,
+				8614694518F3725800D55675 /* spherePod.png in Resources */,
+				86EDC93118F1E24800AA137A /* attach.wav in Resources */,
+				8662B1B018EF99AA00C90FC0 /* padMovement.png in Resources */,
+				86EDC93418F1E2EF00AA137A /* sparks.sks in Resources */,
 				8662B17518EF8F1100C90FC0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,9 +350,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				8662B16E18EF8F1100C90FC0 /* main.m in Sources */,
+				86EDC93C18F1ECCC00AA137A /* WRShake.m in Sources */,
+				86EDC94518F2315600AA137A /* WRInfiniteScroll.m in Sources */,
 				8662B17218EF8F1100C90FC0 /* WRAppDelegate.m in Sources */,
-				8662B17818EF8F1100C90FC0 /* WRViewController.m in Sources */,
-				8662B17B18EF8F1100C90FC0 /* WRMyScene.m in Sources */,
+				8662B1B318EF9B3000C90FC0 /* WRSphere.m in Sources */,
+				8662B1A018EF90B200C90FC0 /* WRWorldViewController.m in Sources */,
+				8662B19D18EF906400C90FC0 /* WRWorldScene.m in Sources */,
+				8662B1B618EF9B9C00C90FC0 /* WRObject.m in Sources */,
+				8614694C18F3776900D55675 /* WRSpherePod.m in Sources */,
+				8614694918F3742E00D55675 /* WRSphereBoost.m in Sources */,
+				8662B1AE18EF967700C90FC0 /* WRControlPad.m in Sources */,
+				8662B1A318EF91C100C90FC0 /* JCMath.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +567,7 @@
 				8662B19718EF8F1100C90FC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8662B19818EF8F1100C90FC0 /* Build configuration list for PBXNativeTarget "WormTests" */ = {
 			isa = XCConfigurationList;
@@ -481,6 +576,7 @@
 				8662B19A18EF8F1100C90FC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
