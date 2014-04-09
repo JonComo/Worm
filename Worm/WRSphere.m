@@ -30,6 +30,9 @@
         _angle = 0;
         _power = 0;
         
+        self.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:self.size.width/2];
+        self.physicsBody.mass = 0.1;
+        
         parentPositions = [NSMutableArray array];
     }
     
@@ -52,12 +55,25 @@
 {
     self.parentSphere = parent;
     
+    parent.physicsBody.mass = 10;
+    self.physicsBody.mass = 0.001;
+    
     parent.power = self.power;
     parent.angle = self.angle;
-    
+    parent.zRotation = parent.angle;
     parent.position = [JCMath pointFromPoint:self.position pushedBy:46 inDirection:self.angle];
     
     parent.childSphere = self;
+    
+    WRWorldScene *worldScene = (WRWorldScene *)self.scene;
+    
+    CGPoint offset = [JCMath pointFromPoint:self.position pushedBy:46/2 inDirection:self.angle];
+    CGPoint anchor = CGPointMake(offset.x + worldScene.world.position.x, offset.y + worldScene.world.position.y);
+    
+    SKPhysicsJointPin *pin = [SKPhysicsJointPin jointWithBodyA:self.physicsBody bodyB:parent.physicsBody anchor:anchor];
+    
+    //SKPhysicsJointLimit *joint = [SKPhysicsJointLimit jointWithBodyA:self.physicsBody bodyB:self.parentSphere.physicsBody anchorA:anchorA anchorB:anchorB];
+    [self.scene.physicsWorld addJoint:pin];
     
     //[self calculateTarget];
 }
@@ -79,10 +95,14 @@
 -(void)updatePosition
 {
     
-    float angle = [JCMath angleFromPoint:self.parentSphere.position toPoint:self.position];
-    self.position = [JCMath pointFromPoint:self.parentSphere.position pushedBy:46 inDirection:angle];
+    float angle = [JCMath angleFromPoint:self.position toPoint:self.parentSphere.position];
     
-    self.angle = angle + M_PI;
+    if (ABS(self.angle - angle) > 0.1){
+        self.angle += [JCMath turnAngle:self.angle*180.0f/M_PI towardsDesiredAngle:[JCMath angleFromPoint:self.position toPoint:self.parentSphere.position]*180.0f/M_PI]*(M_PI/24);
+    }
+    
+    self.position = [JCMath pointFromPoint:self.position pushedBy:self.power/2 inDirection:self.angle];
+    
     self.zRotation = self.angle;
 }
 
@@ -122,9 +142,11 @@
         }
     }
     
-    //Separation behavior
-    if ([self isOnScreen])
+    
+    if ([self isOnScreen] || (self.childSphere && self.parentSphere))
     {
+        //Separation behavior
+        /*
         for (WRObject *sphere in worldScene.world.children){
             
             if (ABS(self.position.x - sphere.position.x) > 60 || ABS(self.position.y - sphere.position.y) > 60) continue;
@@ -141,10 +163,10 @@
                 if (sphere == (WRSphere *)worldScene.player && !self.parentSphere && self.childSphere)
                 {
                     //game over
-                    [worldScene gameOver];
+                    //[worldScene gameOver];
                 }
             }
-        }
+        }*/
     
         //Attachment behaviour
         if (!self.parentSphere && [self isAttachedToPlayer]){
@@ -152,6 +174,7 @@
             for (WRObject *object in worldScene.world.children)
             {
                 if (object == self) continue;
+                if (![object isKindOfClass:[WRSphere class]]) continue;
                 
                 WRSphere *sphere = (WRSphere *)object;
                 if (!sphere.parentSphere && !sphere.isImmune)

@@ -146,6 +146,7 @@
     [self.sphereControlling update];
     
     for (WRObject *object in self.world.children){
+        if (![object isKindOfClass:[WRObject class]]) continue;
         if (object == self.sphereControlling) continue;
         [object update];
     }
